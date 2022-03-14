@@ -1,0 +1,135 @@
+@import "./sass/helpers/variables";
+@import "./sass/base/reset";
+@import "./sass/base/typography";
+@import "./sass/components/buttons";
+
+.summary-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $third-color url(../images/pattern-background-desktop.svg)
+    no-repeat;
+  background-size: 100%;
+}
+
+.summary {
+  position: relative;
+  width: 440px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: $border-radius;
+
+  .summary-info {
+    padding: 45px;
+    padding-bottom: 25px;
+    text-align: center;
+
+    @media ($mobile) {
+      & {
+        padding: 20px 15px;
+      }
+    }
+  }
+}
+
+.summary-description {
+  h1 {
+    font-weight: 900;
+    color: $main-color;
+    font-size: 27px;
+    margin-bottom: 18px;
+
+    @media ($mobile) {
+      & {
+        font-size: 22px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  p {
+    color: $alt-color;
+    font-size: $font-size + 1; // 17px
+    font-weight: 500;
+    line-height: 1.6;
+
+    @media ($mobile) {
+      & {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.summary-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 25px;
+  margin: 20px 0 32px;
+  background: $fourth-color;
+  border-radius: $border-radius / 2;
+
+  @media (max-width: 375px) {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .plan-info {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    text-align: start;
+
+    @media (max-width: 375px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .plan-link {
+    a {
+      color: $button-background;
+      text-decoration: underline;
+      font-weight: 700;
+      font-size: $font-size - 1; // 15px
+      transition: $main-transition;
+
+      &:hover {
+        text-decoration: none;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.plan-info {
+  .plan-image {
+    flex-shrink: 0;
+  }
+
+  .plan-details {
+    .plan-name {
+      color: $main-color;
+      font-size: $font-size;
+      font-weight: 900;
+    }
+
+    .plan-price {
+      color: $alt-color;
+      font-size: $font-size + 1; // 17px
+    }
+  }
+}
+
+.summary-subscribe {
+  a {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

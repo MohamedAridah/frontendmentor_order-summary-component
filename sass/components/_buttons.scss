@@ -1,0 +1,27 @@
+.btn {
+  display: block;
+  padding: 14px;
+  border-radius: $border-radius / 2;
+  font-weight: 700;
+  font-size: $font-size - 1; // 15px
+  cursor: pointer;
+  transition: $main-transition;
+}
+
+.primary-btn {
+  background: $button-background;
+  color: #fff;
+  box-shadow: 0 15px 20px hsla(245, 75%, 52%, 0.25);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.secondary-btn {
+  color: $alt-color;
+
+  &:hover {
+    color: $main-color;
+  }
+}
