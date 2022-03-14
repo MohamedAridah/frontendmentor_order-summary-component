@@ -16,7 +16,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Overview
 
-Hello Everyone, This is my <strong>1 <sup>st</sup></strong> Frontend Mentor challenge.
+Hello Everyone, This is my <strong>1<sup>st</sup></strong> Frontend Mentor challenge.
 
 ### The challenge
 
